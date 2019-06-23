@@ -1,0 +1,22 @@
+how i cleaned the data:
+
+1- change every , to .
+2- change every ; to ,
+3- delete every row that has NA (another solution would be to fill it with the average value of the column).
+4- encode the categorical variables to continuous variables as such
+"variable1": {"b": 1, "a": 2},
+"variable4": {"u": 1, "y":2,"l":3},
+"variable5": {"g":1,"p":2,"gg":3},
+"variable6": {"c": 1, "q":2,"cc":3,"x":4,"W": 5, "aa":6, "d":7,"ff":8,"i":9,"m":10,"k":11,"e":12,"j":13,"r":14},
+"variable7": {"v":1, "h":2, "bb":3, "ff":4,"n":5,"o":6,"z":7,"dd":8,"j":9},
+"variable9": {"t":1,"f":2},
+"variable10": {"t":1,"f":2},
+"variable12": {"t":1,"f":2},
+"variable13": {"g":1,"s":2,"p":3},
+"variable18": {"t":1,"f":2},
+"classLabel": {"yes.":1,"no.":2}
+
+this step was done by two ways, using the find and replace in excel, as you'll find validation - Copy and training - Copy datasets
+which are the same datasets but with encoded data internally using excel, the other way is using python's replace function
+which replaces values in a dataframe using a dictionary.
+i tried both ways and was given the same results, discussed more in the results document attached.
